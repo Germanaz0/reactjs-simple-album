@@ -24,7 +24,7 @@ class Album extends Component {
             <div className="Album-Picture-Title">
                 {pic.title}
             </div>
-            <a href="http://google.com" title={pic.title} className="Album-Picture-Image" target="_blank">
+            <a href={pic.url} title={pic.title} className="Album-Picture-Image" target="_blank">
                 <img src={pic.thumbnailUrl} alt={pic.title}/>
             </a>
         </div>);
@@ -35,10 +35,16 @@ class Album extends Component {
      * @returns {*}
      */
     render() {
-        const {pictures} = this.props;
+        let {pictures, picsQuantity} = this.props;
+        pictures.sort((a, b) => a.id < b.id ? 1 : -1 );
+
+        if (!picsQuantity) {
+            picsQuantity = pictures.length;
+        }
+
         return (
             <div className="Album-Container">
-                {pictures.map((pic) => this.renderSinglePic(pic))}
+                {pictures.slice(0, picsQuantity).map((pic) => this.renderSinglePic(pic))}
             </div>
         );
     }

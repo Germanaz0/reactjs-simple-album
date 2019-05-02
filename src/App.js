@@ -6,6 +6,8 @@ import Album from './components/Album';
 
 /** Constant to limit the quantity of items */
 const ALBUMS_QUANTITY = 3;
+/** LIMIT THE PICS QUANTITY **/
+const PICS_QUANTITY = 2;
 /** API URL **/
 const API_URL = 'https://jsonplaceholder.typicode.com/photos';
 
@@ -58,7 +60,7 @@ class App extends Component {
   renderAlbums() {
     const { albums } = this.state;
     let albumsContainers = albums.map((pictures, keyItem) => {
-      return (<Album key={keyItem} pictures={pictures} />);
+      return (<Album key={keyItem} pictures={pictures} picsQuantity={PICS_QUANTITY}/>);
     });
 
     return (<div className="App-Album-Wrapper">
