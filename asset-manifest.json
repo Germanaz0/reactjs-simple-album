@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Germanaz0/reactjs-simple-album/static/css/main.b428675e.chunk.css",
+    "main.js": "/Germanaz0/reactjs-simple-album/static/js/main.078a7b5c.chunk.js",
+    "main.js.map": "/Germanaz0/reactjs-simple-album/static/js/main.078a7b5c.chunk.js.map",
+    "runtime~main.js": "/Germanaz0/reactjs-simple-album/static/js/runtime~main.1f56e170.js",
+    "runtime~main.js.map": "/Germanaz0/reactjs-simple-album/static/js/runtime~main.1f56e170.js.map",
+    "static/js/2.4ef11a0e.chunk.js": "/Germanaz0/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js",
+    "static/js/2.4ef11a0e.chunk.js.map": "/Germanaz0/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js.map",
+    "index.html": "/Germanaz0/reactjs-simple-album/index.html",
+    "precache-manifest.f1e4fb6389ae0055fb788616d135b6fd.js": "/Germanaz0/reactjs-simple-album/precache-manifest.f1e4fb6389ae0055fb788616d135b6fd.js",
+    "service-worker.js": "/Germanaz0/reactjs-simple-album/service-worker.js",
+    "static/css/main.b428675e.chunk.css.map": "/Germanaz0/reactjs-simple-album/static/css/main.b428675e.chunk.css.map"
+  }
+}
