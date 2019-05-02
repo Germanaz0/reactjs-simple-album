@@ -1,15 +1,24 @@
 import React, {Component} from 'react';
+import Axios from 'axios';
+import { groupBy } from 'lodash';
 import './App.css';
 import Album from './components/Album';
 
-import Axios from 'axios';
-import { groupBy } from 'lodash';
-
+/** Constant to limit the quantity of items */
+const ALBUMS_QUANTITY = 3;
+/** API URL **/
 const API_URL = 'https://jsonplaceholder.typicode.com/photos';
 
-
+/**
+ * Main App
+ */
 class App extends Component {
 
+  /**
+   * Base constructor
+   * @param props
+   * @param state
+   */
   constructor(props, state) {
     super(props, state);
 
@@ -18,22 +27,34 @@ class App extends Component {
     };
 
     Axios.get(API_URL).then((data) => {
-      let lastAlbums = data.data;
-      // lastAlbums.sort((a, b) => a.albumId < b.albumId ? 1 : -1);
-
-      let albumIndexes = {};
-      lastAlbums.forEach((album) => albumIndexes[album.albumId] = album.albumId);
-      albumIndexes = Object.values(albumIndexes);
-      albumIndexes.sort((a, b) => a < b ? 1 : -1);
-
-      const last3Albums = albumIndexes.slice(0, 3);
-
-      const groupedAlbums = groupBy(lastAlbums, 'albumId');
-      const lastPhotos = last3Albums.map((albumId) => groupedAlbums[albumId]);
-      this.setState({albums: lastPhotos});
+      this.setLastAlbumsFromData(data.data, ALBUMS_QUANTITY);
     });
   }
 
+  /**
+   * Set last X pictures from data response
+   * @param data
+   * @param albumQuantity
+   */
+  setLastAlbumsFromData = (data, albumQuantity) => {
+
+    let albumIndexes = {};
+    data.forEach((album) => albumIndexes[album.albumId] = album.albumId);
+
+    albumIndexes = Object.values(albumIndexes);
+    albumIndexes.sort((a, b) => a < b ? 1 : -1);
+
+    const lastAlbums = albumIndexes.slice(0, albumQuantity);
+    const groupedAlbums = groupBy(data, 'albumId');
+    const albums = lastAlbums.map((albumId) => groupedAlbums[albumId]);
+
+    this.setState({albums});
+  };
+
+  /**
+   * Helper function to render the album
+   * @returns {*}
+   */
   renderAlbums() {
     const { albums } = this.state;
     let albumsContainers = albums.map((pictures, keyItem) => {
@@ -45,6 +66,11 @@ class App extends Component {
     </div>);
 
   };
+
+  /**
+   * Render the main app
+   * @returns {*}
+   */
   render() {
     return (
         <div className="App">

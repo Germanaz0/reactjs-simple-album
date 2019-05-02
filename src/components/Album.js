@@ -1,11 +1,24 @@
 import React, {Component} from 'react';
 import './Album.css';
 
+/**
+ * Album component
+ */
 class Album extends Component {
+    /**
+     * Main constructor
+     * @param props
+     * @param state
+     */
     constructor(props, state) {
         super(props, state);
     }
 
+    /**
+     * render a single picture from the album
+     * @param pic
+     * @returns {*}
+     */
     renderSinglePic(pic) {
         return (<div key={pic.id} className="Album-Picture">
             <div className="Album-Picture-Title">
@@ -16,6 +29,11 @@ class Album extends Component {
             </a>
         </div>);
     }
+
+    /**
+     * Render album container with their pictures
+     * @returns {*}
+     */
     render() {
         const {pictures} = this.props;
         return (

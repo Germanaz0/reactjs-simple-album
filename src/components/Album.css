@@ -10,11 +10,15 @@
     border: 1px solid purple;
 }
 
+.Album-Container::-webkit-scrollbar { width: 0 !important }
+
 .Album-Container {
     padding: 1.2em;
     display: flex;
     overflow-x: auto;
     margin: 2em;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
 }
 
 .Album-Picture {
@@ -24,4 +28,5 @@
 .Album-Picture-Title {
     text-align: center;
     height: 70px;
+    margin-bottom: 10px;
 }
