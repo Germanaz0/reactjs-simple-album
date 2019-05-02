@@ -2,7 +2,7 @@
   "name": "reactjs-simple-album",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://github.com/Germanaz0/reactjs-simple-album",
+  "homepage": "http://Germanaz0.github.io/reactjs-simple-album",
   "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.11",
