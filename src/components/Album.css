@@ -1,0 +1,27 @@
+.Album-Container:nth-child(1) {
+    border: 1px solid green;
+}
+
+.Album-Container:nth-child(2) {
+    border: 1px solid blue;
+}
+
+.Album-Container:nth-child(3) {
+    border: 1px solid purple;
+}
+
+.Album-Container {
+    padding: 1.2em;
+    display: flex;
+    overflow-x: auto;
+    margin: 2em;
+}
+
+.Album-Picture {
+    margin-right: 15px;
+}
+
+.Album-Picture-Title {
+    text-align: center;
+    height: 70px;
+}
