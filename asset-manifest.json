@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Germanaz0/reactjs-simple-album/static/css/main.b428675e.chunk.css",
-    "main.js": "/Germanaz0/reactjs-simple-album/static/js/main.078a7b5c.chunk.js",
-    "main.js.map": "/Germanaz0/reactjs-simple-album/static/js/main.078a7b5c.chunk.js.map",
-    "runtime~main.js": "/Germanaz0/reactjs-simple-album/static/js/runtime~main.1f56e170.js",
-    "runtime~main.js.map": "/Germanaz0/reactjs-simple-album/static/js/runtime~main.1f56e170.js.map",
-    "static/js/2.4ef11a0e.chunk.js": "/Germanaz0/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js",
-    "static/js/2.4ef11a0e.chunk.js.map": "/Germanaz0/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js.map",
-    "index.html": "/Germanaz0/reactjs-simple-album/index.html",
-    "precache-manifest.f1e4fb6389ae0055fb788616d135b6fd.js": "/Germanaz0/reactjs-simple-album/precache-manifest.f1e4fb6389ae0055fb788616d135b6fd.js",
-    "service-worker.js": "/Germanaz0/reactjs-simple-album/service-worker.js",
-    "static/css/main.b428675e.chunk.css.map": "/Germanaz0/reactjs-simple-album/static/css/main.b428675e.chunk.css.map"
+    "main.css": "/reactjs-simple-album/static/css/main.b428675e.chunk.css",
+    "main.js": "/reactjs-simple-album/static/js/main.37502648.chunk.js",
+    "main.js.map": "/reactjs-simple-album/static/js/main.37502648.chunk.js.map",
+    "runtime~main.js": "/reactjs-simple-album/static/js/runtime~main.06457b1c.js",
+    "runtime~main.js.map": "/reactjs-simple-album/static/js/runtime~main.06457b1c.js.map",
+    "static/js/2.4ef11a0e.chunk.js": "/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js",
+    "static/js/2.4ef11a0e.chunk.js.map": "/reactjs-simple-album/static/js/2.4ef11a0e.chunk.js.map",
+    "index.html": "/reactjs-simple-album/index.html",
+    "precache-manifest.fd4c5f21aff8f1a498b8bb8e2859938c.js": "/reactjs-simple-album/precache-manifest.fd4c5f21aff8f1a498b8bb8e2859938c.js",
+    "service-worker.js": "/reactjs-simple-album/service-worker.js",
+    "static/css/main.b428675e.chunk.css.map": "/reactjs-simple-album/static/css/main.b428675e.chunk.css.map"
   }
 }
